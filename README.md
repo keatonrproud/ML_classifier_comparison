@@ -158,7 +158,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [issues-url]: https://github.com/keatonrproud/ML_classifier_comparison/issues
 [license-shield]: https://img.shields.io/github/license/keatonrproud/ML_classifier_comparison.svg?style=for-the-badge
 [license-url]: https://github.com/keatonrproud/ML_classifier_comparison/blob/main/license
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://linkedin.com/in/keatonrproud
 [twitter-shield]: https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
 [twitter-url]: https://twitter.com/keatonrproud
