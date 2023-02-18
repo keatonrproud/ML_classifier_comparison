@@ -78,8 +78,8 @@ Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only da
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you want an overview of the code and the outputs, you can view them in the main_project.ipynb directly. 
-Alternatively, you can clone the repo and access the scripts locally.
+If you want an overview of the code and the outputs, main_project.ipynb makes for easy viewing. 
+Alternatively, clone the repo and access the scripts locally.
 
 ### Prerequisites
 
@@ -106,10 +106,7 @@ Ensure you have all packages installed.
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". All feedback is appreciated.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -121,10 +118,12 @@ Don't forget to give the project a star!
 
 
 
-<!-- LICENSE -->
-## License
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+* [Scikit-Learn Docs](https://scikit-learn.org/)
+* [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full)
+* [University of Bologna](https://www.unibo.it/en)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,15 +140,12 @@ Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https:/
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- LICENSE -->
+## License
 
-* [Scikit-Learn Docs](https://scikit-learn.org/)
-* [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full)
-* [University of Bologna](https://www.unibo.it/en)
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
