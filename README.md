@@ -9,6 +9,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Twitter][twitter-shield]][twitter-url] 
 
 </div>
 
@@ -58,17 +59,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Using a 2021 paper by Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, and Daniel Ludovico Guidoni, six ML classifiers were compared to see which best predicted COVID-19 outcomes from Brazil cases.
+Six ML classifiers were compared to see which best predicted COVID-19 outcomes from Brazil cases with the help of a 2021 paper by Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, and Daniel Ludovico Guidoni. Further attempts to improve effectiveness and efficiency of the models are included.
 
 <br />
 
-Public data accessed from https://coronavirus.es.gov.br/painel-covid-19-es was used. Only data until March 29, 2021 was used and stored in this repo, but data updated to today is available at the link provided.
+Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only data until March 29, 2021 was used and stored in this repo, but data updated to today is available at the link provided.
 
 ### Built With
 
-* [![Python][python-shield]][python-url]
-* [![Jupyter Notebook][jupyter-shield]][jupyter-url]
-* [![PyCharm][pycharm-shield]][pycharm-url]
+[![Python][python-shield]][python-url]
+[![Jupyter Notebook][jupyter-shield]][jupyter-url]
+[![PyCharm][pycharm-shield]][pycharm-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,60 +78,29 @@ Public data accessed from https://coronavirus.es.gov.br/painel-covid-19-es was u
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+If you want an overview of the code and the outputs, you can view them in the main_project.ipynb directly. 
+Alternatively, you can clone the repo and access the scripts locally.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You'll need several packages to run the scripts directly -- _imblearn, matplotlib, numpy, pandas, seaborn, sklearn, and sklearnex_.
+
+Ensure you have all packages installed.
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/keatonrproud/ML_classifier_comparison.git
    ```
-3. Install NPM packages
+2. Install any missing packages
    ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   missing_package install
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/keatonrproud/ML_classifier_comparison/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -139,7 +109,7 @@ See the [open issues](https://github.com/keatonrproud/ML_classifier_comparison/i
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Don't forget to give the project a star!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -163,7 +133,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@keatonrproud](https://twitter.com/keatonrproud) - keatonrproud@gmail.com
+Keaton Proud - [Twitter](https://twitter.com/keatonrproud) - [LinkedIn](https://linkedin.com/in/keatonrproud)- keatonrproud@gmail.com
 
 Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https://github.com/keatonrproud/ML_classifier_comparison)
 
@@ -174,9 +144,9 @@ Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https:/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Scikit-Learn Docs](https://scikit-learn.org/)
+* [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full)
+* [University of Bologna](https://www.unibo.it/en)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,6 +166,8 @@ Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https:/
 [license-url]: https://github.com/keatonrproud/ML_classifier_comparison/blob/main/license
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/keatonrproud
+[twitter-shield]: https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
+[twitter-url]: https://twitter.com/keatonrproud
 [python-shield]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [python-url]: https://python.org/
 [jupyter-shield]: https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white
