@@ -76,7 +76,7 @@ Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only da
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you want an overview of the code and the outputs, [main_project.ipynb](https://github.com/keatonrproud/ML_classifier_comparison/blob/main/main_project.ipynb) makes for easy viewing. 
+If you want an overview of the code and the outputs, [project.ipynb](https://github.com/keatonrproud/ML_classifier_comparison/blob/main/project.ipynb) makes for easy viewing. 
 Alternatively, clone the repo and access the scripts locally.
 
 ### Prerequisites
