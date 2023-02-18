@@ -81,9 +81,9 @@ Alternatively, clone the repo and access the scripts locally.
 
 ### Prerequisites
 
-You'll need several packages to run the scripts directly -- _[imblearn](https://imbalanced-learn.org/stable/), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [seaborn](https://seaborn.pydata.org/), [sklearn](https://scikit-learn.org/stable/), and [sklearnex](https://intel.github.io/scikit-learn-intelex/)_.
+You'll need several packages to run the scripts directly -- _[imblearn](https://imbalanced-learn.org/stable/), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [seaborn](https://seaborn.pydata.org/), [sklearn](https://scikit-learn.org/stable/), [sklearnex](https://intel.github.io/scikit-learn-intelex/)_.
 
-Ensure you have all packages installed. 
+Ensure you have all packages installed. _Note that speed improvements from sklearnex are only possible via Intel processors._
 
 
 ### Installation
