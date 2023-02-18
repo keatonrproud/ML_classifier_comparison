@@ -1,12 +1,18 @@
 <a name="readme-top"></a>
 
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 <h3 align="center">ML Classifier Comparison</h3>
 
   <p align="center">
     Comparing six ML classifiers on COVID-19 data from Brazil, with the help of a 2021 paper. <br />
     Methods to improve efficiency and effectiveness are included.
-    <br />
-    <a href="https://github.com/keatonrproud/ML_classifier_comparison"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/keatonrproud/ML_classifier_comparison/issues">Report Bug</a>
@@ -48,24 +54,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Using a 2021 paper by Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, and Daniel Ludovico Guidoni, six ML classifiers were compared to see which best predicted COVID-19 outcomes from Brazil cases.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `keatonrproud`, `ML_classifier_comparison`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+<br />
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+Public data accessed from https://coronavirus.es.gov.br/painel-covid-19-es was used. Only data until March 29, 2021 was used and stored in this repo, but data updated to today is available at the link provided.
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][python-shield]][python-url]
+* [![Jupyter Notebook][jupyter-shield]][jupyter-url]
+* [![PyCharm][pycharm-shield]][pycharm-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +159,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@keatonrproud](https://twitter.com/keatonrproud) - keatonrproud@gmail.com
 
 Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https://github.com/keatonrproud/ML_classifier_comparison)
 
@@ -190,23 +189,12 @@ Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https:/
 [issues-shield]: https://img.shields.io/github/issues/keatonrproud/ML_classifier_comparison.svg?style=for-the-badge
 [issues-url]: https://github.com/keatonrproud/ML_classifier_comparison/issues
 [license-shield]: https://img.shields.io/github/license/keatonrproud/ML_classifier_comparison.svg?style=for-the-badge
-[license-url]: https://github.com/keatonrproud/ML_classifier_comparison/blob/master/LICENSE.txt
+[license-url]: https://github.com/keatonrproud/ML_classifier_comparison/blob/main/license
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[linkedin-url]: https://linkedin.com/in/keatonrproud
+[python-shield]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[python-url]: https://python.org/
+[jupyter-shield]: https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white
+[jupyter-url]: https://jupyter.org/
+[pycharm-shield]: https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green
+[pycharm-url]: [https://jupyter.org/](https://www.jetbrains.com/pycharm/)
