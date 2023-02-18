@@ -104,7 +104,7 @@ Ensure you have all packages installed. _Note that speed improvements from sklea
 <!-- CONTRIBUTING -->
 ## Contributing
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". All feedback is appreciated.
+If you have a suggestion, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". All feedback is appreciated!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -119,9 +119,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Scikit-Learn Docs](https://scikit-learn.org/)
 * [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full) for the excellent paper.
 * [University of Bologna](https://www.unibo.it/en) for the project idea.
+* [Scikit-Learn Docs](https://scikit-learn.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,8 +146,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/keatonrproud/ML_classifier_comparison.svg?style=for-the-badge
 [contributors-url]: https://github.com/keatonrproud/ML_classifier_comparison/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/keatonrproud/ML_classifier_comparison.svg?style=for-the-badge
