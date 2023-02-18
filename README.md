@@ -3,7 +3,8 @@
 <h3 align="center">ML Classifier Comparison</h3>
 
   <p align="center">
-    Comparing six ML classifiers on COVID-19 data from Brazil, with the help of a 2021 paper. Methods to improve efficiency and effectiveness are included.
+    Comparing six ML classifiers on COVID-19 data from Brazil, with the help of a 2021 paper. <br />
+    Methods to improve efficiency and effectiveness are included.
     <br />
     <a href="https://github.com/keatonrproud/ML_classifier_comparison"><strong>Explore the docs »</strong></a>
     <br />
