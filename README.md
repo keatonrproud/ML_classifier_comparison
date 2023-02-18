@@ -122,8 +122,8 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## Acknowledgments
 
 * [Scikit-Learn Docs](https://scikit-learn.org/)
-* [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full)
-* [University of Bologna](https://www.unibo.it/en)
+* [Fernanda Sumika Hojo De Souza, Natalia Satchiko Hojo-Souza, Edimilson Batista Dos Santos, Cristiano Maciel Da Silva, Daniel Ludovico Guidoni](https://www.frontiersin.org/articles/10.3389/frai.2021.579931/full) for the excellent paper.
+* [University of Bologna](https://www.unibo.it/en) for the project idea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
