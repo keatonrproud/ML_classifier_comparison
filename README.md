@@ -76,14 +76,14 @@ Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only da
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you want an overview of the code and the outputs, main_project.ipynb makes for easy viewing. 
+If you want an overview of the code and the outputs, [main_project.ipynb](https://github.com/keatonrproud/ML_classifier_comparison/blob/main/main_project.ipynb) makes for easy viewing. 
 Alternatively, clone the repo and access the scripts locally.
 
 ### Prerequisites
 
-You'll need several packages to run the scripts directly -- _imblearn, matplotlib, numpy, pandas, seaborn, sklearn, and sklearnex_.
+You'll need several packages to run the scripts directly -- _[imblearn](https://imbalanced-learn.org/stable/), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [seaborn](https://seaborn.pydata.org/), [sklearn](https://scikit-learn.org/stable/), and [sklearnex](https://intel.github.io/scikit-learn-intelex/)_.
 
-Ensure you have all packages installed.
+Ensure you have all packages installed. 
 
 
 ### Installation
