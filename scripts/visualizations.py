@@ -1,3 +1,5 @@
+"""Building the visualizations for each model and experiment"""
+
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
@@ -5,27 +7,24 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 import os
 
-# TODO: create combined image for multiple graphs (symptoms, comorbidities, etc)
-# TODO: correlation heatmap of all variables
-# TODO: correlation to outcome for all variables when True
-
 # set display theme to basic seaborn
 sb.set_theme()
 
 # set figure directory
 figure_path = os.path.dirname(os.getcwd()) + "\\figures"
 
+def add_spaces(word):
+    """Add spaces before all upper case letters after the first
 
-model_shortform = {'LogisticRegression': 'LogReg',
-                   'LinearDiscriminantAnalysis': 'LDA',
-                   'KNeighborsClassifier': 'KNN',
-                   'DecisionTreeClassifier': 'DT',
-                   'XGBClassifier': 'XGB',
-                   'SVC': 'SVC'}
+    :param word: some word with no spaces in it
 
-def add_spaces(i):
-    string = [i[0], ]
-    for letter in i[1:]:
+    Variables:
+        string: the first letter of the word submitted, to avoid checking it when looking for upper case chars
+
+    :return: word with spaces
+    """
+    string = [word[0], ]
+    for letter in word[1:]:
         if letter.isupper():
             string.append(f" {letter}")
         else:
@@ -34,6 +33,17 @@ def add_spaces(i):
 
 
 def histo_bar_plot(df, parameter: str, grouping: str = 'Outcome', axis=None):
+    """Makes a histogram bar plot to be later added into a grid of plots
+
+    :param df: data to create the bar plot from
+    :param parameter: parameter to compare from the data
+    :param grouping: how to split the data within the parameter; default is Outcome
+    :param axis: which axis in the grid to place the plot
+
+    Variables:
+        plot: the plot produced
+        xlabel: the x axis label
+    """
     # set as categorical variable, sorted from highest to lowest count
     df[parameter] = pd.Categorical(df[parameter], categories=df[parameter].value_counts().index)
 
@@ -50,8 +60,26 @@ def histo_bar_plot(df, parameter: str, grouping: str = 'Outcome', axis=None):
     plot.set(ylabel=None, xlabel=xlabel)
 
 
-def build_plot_grid(df, parameters: list, grouping: str = 'Outcome', filename: str = 'test',
+def build_plot_grid(df, parameters: list, grouping: str = 'Outcome', filename: str = 'no_name',
                     title: str = "", w: int = 3):
+    """Building the grid of histo plots and saving it as a figure
+
+    :param df: data to create the bar plot from
+    :param parameter: parameter to compare from the data
+    :param grouping: how to split the data within the parameter; default is Outcome
+    :param filename: name to save the plot grid as
+    :param title: title of the plot grid
+    :param w: number of columns for the plot grid
+
+    Variables:
+        h: number of rows
+        figure: the figure containing the grid
+        grid: the grid of plots
+        row: the current row
+        col: the current col
+        sum_tick_chars: the total # of characters in all the x tick labels
+        last_col_ind: the col index of the last plot that has data in it and isn't an empty axis
+    """
     # set height of grid as # of parameters / 3, unless there's remainder then add extra row
     h = len(parameters) // w if len(parameters) % w == 0 else len(parameters) // w + 1
     figure, grid = plt.subplots(h, 3, figsize=(15, 10))
@@ -105,6 +133,11 @@ def build_plot_grid(df, parameters: list, grouping: str = 'Outcome', filename: s
 
 
 def build_all_demographics(df, name):
+    """Builds and saves a plot grid for the descriptors, symptoms, and comorbidities
+
+    :param df: the data to build graphs from
+    :param name: part of the name to save the file as
+    """
     build_plot_grid(df=df,
                     parameters=['CriteriaConfirmation', 'AgeGroup', 'Education', 'ColorRace', 'Sex', 'OverSixty',
                                 'Hospitalized', 'TravelBrasil', 'TravelInternational', 'SumSymptoms',
@@ -126,19 +159,37 @@ def build_all_demographics(df, name):
 
 
 def create_confusion_matrix_info(data):
+    """Puts the total predictions and real outcomes into a format usable for a confusion matrix
+
+    :param data: data to use
+
+    Variables:
+        all_models: list of all the model names
+        all_real_and_preds: list with two items; the list of real outcomes, and the list of predictions
+
+    :return: the list of model names, and the list of two lists; the real outcomes and the predictions
+    """
     all_models = [type(model).__name__ for model in [d['Model'] for d in data]]
     all_real_and_preds = []
     for d in data:
-        real_and_preds = [[], []]
-        real_and_preds[0] = d['Real Outcomes']
-        real_and_preds[1] = d['Predictions']
+        real_and_preds = [d['Real Outcomes'], d['Predictions']]
         all_real_and_preds.append(real_and_preds)
 
     return all_models, all_real_and_preds
 
 
-def build_confusion_matrix(model, real, preds, axis=None):
-    # TODO: do this only for final validation test !!!
+def build_confusion_matrix(model, real: list, preds: list, axis=None):
+    """Creates a confusion matrix
+
+    :param model: the model, used for the title
+    :param real: list of real outcomes
+    :param preds: list of predictions
+    :param axis: axis to place the confusion matrix in the grid
+
+    Variables:
+        mtrx: the confusion matrix
+        htmp: the heatmap for the confusion matrix
+    """
     mtrx = confusion_matrix(real, preds)
     htmp = sb.heatmap(mtrx / np.sum(mtrx), annot=True, fmt='.1%', cmap='Reds', ax=axis)
 
@@ -152,6 +203,22 @@ def build_confusion_matrix(model, real, preds, axis=None):
 
 
 def build_conf_mtrx_grid(models: list, all_real_and_preds: list, filename: str, title: str = '', w: int = 3):
+    """Building the grid of confusion matrices and saving it as a figure
+
+    :param models: list of model names for titles
+    :param all_real_and_preds: list of two lists; real outcomes and predictions
+    :param filename: name to save the plot grid as
+    :param title: title of the plot grid
+    :param w: number of columns for the plot grid
+
+    Variables:
+        h: number of rows
+        figure: the figure containing the grid
+        grid: the grid of plots
+        row: the current row
+        col: the current col
+        last_col_ind: the col index of the last plot that has data in it and isn't an empty axis
+    """
     # set height of grid as # of parameters / 3, unless there's remainder then add extra row
     h = len(all_real_and_preds) // w if len(all_real_and_preds) % w == 0 else len(all_real_and_preds) // w + 1
     figure, grid = plt.subplots(h, 3, figsize=(15, 8))
@@ -192,6 +259,25 @@ def build_conf_mtrx_grid(models: list, all_real_and_preds: list, filename: str, 
 
 
 def model_metric_bar_plot(data, metric, axis=None):
+    """Building a bar plot to compare performances of models along a certain metric
+
+    :param data: data to compare using
+    :param metric: metric to compare along
+    :param axis: axis to place the bar plot in the grid
+
+    Variables:
+        model_shortform: shortforms for the models when creating titles
+        models: list of model shortforms
+        metric_list: list of metrics to compare total
+        df: dataframe of model names and metrics to use
+        bp: barplot created
+    """
+    model_shortform = {'LogisticRegression': 'LogReg',
+                       'LinearDiscriminantAnalysis': 'LDA',
+                       'KNeighborsClassifier': 'KNN',
+                       'DecisionTreeClassifier': 'DT',
+                       'XGBClassifier': 'XGB',
+                       'SVC': 'SVC'}
     models = []
     metric_list = []
     for dat in data:
@@ -212,6 +298,22 @@ def model_metric_bar_plot(data, metric, axis=None):
 
 
 def model_metric_bar_grid(data, metrics: list, filename: str, title: str='', w: int=3):
+    """Building the grid of model comparisons and saving it as a figure
+
+    :param data: data to create the grid from
+    :param metrics: metrics to compare with
+    :param filename: name to save the plot grid as
+    :param title: title of the plot grid
+    :param w: number of columns for the plot grid
+
+    Variables:
+        h: number of rows
+        figure: the figure containing the grid
+        grid: the grid of plots
+        row: the current row
+        col: the current col
+        last_col_ind: the col index of the last plot that has data in it and isn't an empty axis
+    """
     # set height of grid as # of parameters / 3, unless there's remainder then add extra row
     h = len(metrics) // w if len(metrics) % w == 0 else len(metrics) // w + 1
     figure, grid = plt.subplots(h, 3, figsize=(15, 10))
@@ -252,6 +354,23 @@ def model_metric_bar_grid(data, metrics: list, filename: str, title: str='', w: 
 
 
 def build_comparison_tables(data):
+    """Building a table to compare metric scores for each model
+
+    :param data: data to use for comparing models
+
+    Variables:
+        all_metrics: list of metrics to compare
+        all_models: all model names
+        all_acc: all accuracy scores
+        all_roc: all ROC AUC scores
+        all_avg_prc: all PR AUC scores
+        all_prc: all precision scores
+        all_rcl: all recall scores
+        all_F1: all F1 scores
+        df: final dataframe with all the scores
+
+    :return: a dataframe with each metric and each score
+    """
     all_metrics = ['Accuracy', 'ROC AUC', 'PR AUC', 'Precision', 'Recall', 'F1']
     all_models = [type(model).__name__ for model in [d['Model'] for d in data]]
     all_acc = [d['Accuracy'] for d in data]
