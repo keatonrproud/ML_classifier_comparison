@@ -94,7 +94,7 @@ Ensure you have all packages installed. _Note that speed improvements from sklea
    ```
 2. Install any missing packages
    ```sh
-   missing_package install
+   pip install missing_package
    ```
 
 
