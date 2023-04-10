@@ -130,7 +130,7 @@ If you have a suggestion, please fork the repo and create a pull request. You ca
 <!-- CONTACT -->
 ## Contact
 
-Keaton Proud - [Twitter](https://twitter.com/keatonrproud) - [LinkedIn](https://linkedin.com/in/keatonrproud)- keatonrproud@gmail.com
+Keaton Proud - [Website](https://keatonrproud.github.io) - [LinkedIn](https://linkedin.com/in/keatonrproud) - [Twitter](https://twitter.com/keatonrproud) - keatonrproud@gmail.com
 
 Project Link: [https://github.com/keatonrproud/ML_classifier_comparison](https://github.com/keatonrproud/ML_classifier_comparison)
 
