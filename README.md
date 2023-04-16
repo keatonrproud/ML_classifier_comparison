@@ -61,7 +61,7 @@ Six ML classifiers were compared to see which best predicted COVID-19 outcomes f
 
 <br />
 
-Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only data until March 29, 2021 was used and stored in this repo, but data updated to today is available at the link provided.
+Data was accessed from https://coronavirus.es.gov.br/painel-covid-19-es. Only data until March 29, 2021 was used and stored in this repo, but the full dataset can be obtained from the link provided.
 
 ### Built With
 
